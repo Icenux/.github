@@ -5,6 +5,14 @@ title: "[TASK] "
 labels: task
 ---
 
+<img src="https://raw.githubusercontent.com/Icenux/.github/main/assets/logo.png" width="64" align="left" alt="Icenux">
+
+## Icenux
+
+Internal task.
+
+<br clear="left">
+
 ## Goal
 What should be done?
 
