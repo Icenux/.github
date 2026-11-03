@@ -1,0 +1,76 @@
+name: Icenux – Bug report
+description: Something does not work as expected
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        <img src="https://raw.githubusercontent.com/Icenux/.github/main/assets/logo.png" width="64" align="left" alt="Icenux">
+
+        ## Icenux
+
+        Thanks for the report. A few details help to fix it faster.
+
+        <br clear="left">
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run ...
+        2. Press ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit
+      placeholder: v1.0.0 or output of --version
+    validations:
+      required: true
+  - type: input
+    id: distro
+    attributes:
+      label: Distribution
+      placeholder: Arch, Fedora 41, Debian 12
+  - type: dropdown
+    id: session
+    attributes:
+      label: Session / compositor
+      options:
+        - Sway
+        - Hyprland
+        - GNOME (Wayland)
+        - KDE (Wayland)
+        - X11
+        - Other / not applicable
+  - type: dropdown
+    id: install
+    attributes:
+      label: Installation method
+      options:
+        - APT repository
+        - RPM repository
+        - Manual / git clone
+        - Docker
+        - Other
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / terminal output
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues first
+          required: true
