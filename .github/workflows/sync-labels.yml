@@ -1,0 +1,35 @@
+# Keeps the labels of every Icenux repository identical to labels.json.
+# Needs the organization secret LABELS_TOKEN (fine-grained PAT or GitHub App token
+# with Issues: write + Metadata: read on all Icenux repositories).
+name: Sync labels
+
+on:
+  push:
+    branches: [main]
+    paths: [labels.json, scripts/sync-labels.sh]
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-labels
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Sync labels to all repositories
+        env:
+          GH_TOKEN: ${{ secrets.LABELS_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::Secret LABELS_TOKEN is not set"; exit 1
+          fi
+          repos=$(gh repo list Icenux --limit 200 --no-archived --json name -q '.[].name')
+          # shellcheck disable=SC2086
+          scripts/sync-labels.sh $repos
