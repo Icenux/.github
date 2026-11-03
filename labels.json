@@ -1,0 +1,42 @@
+[
+  {
+    "color": "d73a4a",
+    "description": "Something fucked up.",
+    "name": "Bug"
+  },
+  {
+    "color": "0075ca",
+    "description": "Create / edit docs.",
+    "name": "Documentation"
+  },
+  {
+    "color": "008672",
+    "description": "Extra attention is needed",
+    "name": "Help wanted"
+  },
+  {
+    "color": "ffffff",
+    "description": "Do not work on it",
+    "name": "Ignore"
+  },
+  {
+    "color": "bee15a",
+    "description": "New feature 4 consultating",
+    "name": "Plan"
+  },
+  {
+    "color": "d876e3",
+    "description": "Further information is requested",
+    "name": "Question"
+  },
+  {
+    "color": "ac4262",
+    "description": "Test as user",
+    "name": "Test"
+  },
+  {
+    "color": "0c6ffd",
+    "description": "New feature",
+    "name": "ToDo"
+  }
+]

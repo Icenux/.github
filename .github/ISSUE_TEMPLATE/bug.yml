@@ -1,7 +1,7 @@
 name: Icenux – Bug report
 description: Something does not work as expected
 title: "[BUG] "
-labels: ["bug"]
+labels: ["Bug"]
 body:
   - type: markdown
     attributes:

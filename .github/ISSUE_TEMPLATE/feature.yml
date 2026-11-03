@@ -1,7 +1,7 @@
 name: Icenux – Feature request
 description: Suggest an improvement or new support (compositor, distro, option)
 title: "[FEATURE] "
-labels: ["enhancement"]
+labels: ["ToDo"]
 body:
   - type: markdown
     attributes:
