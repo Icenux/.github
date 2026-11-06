@@ -6,7 +6,11 @@ body:
   - type: markdown
     attributes:
       value: |
+        <img src="https://raw.githubusercontent.com/Icenux/.github/main/assets/logo.png" width="64" align="left" alt="Logo">
+
         Thanks for the report. A few details help to fix it faster.
+
+        <br clear="left">
   - type: textarea
     id: what
     attributes:
