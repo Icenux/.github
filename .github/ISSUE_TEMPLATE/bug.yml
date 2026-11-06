@@ -1,4 +1,4 @@
-name: Icenux – Bug report
+name: Bug report
 description: Something does not work as expected
 title: "[BUG] "
 labels: ["Bug"]
@@ -6,13 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        <img src="https://raw.githubusercontent.com/Icenux/.github/main/assets/logo.png" width="64" align="left" alt="Icenux">
-
-        ## Icenux
-
         Thanks for the report. A few details help to fix it faster.
-
-        <br clear="left">
   - type: textarea
     id: what
     attributes:
@@ -37,35 +31,16 @@ body:
     validations:
       required: true
   - type: input
-    id: distro
+    id: environment
     attributes:
-      label: Distribution
-      placeholder: Arch, Fedora 41, Debian 12
-  - type: dropdown
-    id: session
-    attributes:
-      label: Session / compositor
-      options:
-        - Sway
-        - Hyprland
-        - GNOME (Wayland)
-        - KDE (Wayland)
-        - X11
-        - Other / not applicable
-  - type: dropdown
-    id: install
-    attributes:
-      label: Installation method
-      options:
-        - APT repository
-        - RPM repository
-        - Manual / git clone
-        - Docker
-        - Other
+      label: Environment
+      description: OS, browser, runtime or anything else relevant to your setup.
+      placeholder: Ubuntu 24.04, Firefox 130, Node 22
   - type: textarea
     id: logs
     attributes:
-      label: Logs / terminal output
+      label: Logs / screenshots / output
+      description: Paste logs or terminal output, or drag in screenshots.
       render: shell
   - type: checkboxes
     id: checks
