@@ -5,6 +5,12 @@ title: "[TASK] "
 labels: ToDo
 ---
 
+<img src="https://raw.githubusercontent.com/Icenux/.github/main/assets/logo.png" width="64" align="left" alt="Logo">
+
+Internal task.
+
+<br clear="left">
+
 ## Goal
 What should be done?
 
