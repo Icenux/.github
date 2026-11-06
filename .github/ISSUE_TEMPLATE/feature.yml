@@ -6,7 +6,11 @@ body:
   - type: markdown
     attributes:
       value: |
+        <img src="https://raw.githubusercontent.com/Icenux/.github/main/assets/logo.png" width="64" align="left" alt="Logo">
+
         Tell us what would make the project better.
+
+        <br clear="left">
   - type: textarea
     id: problem
     attributes:
