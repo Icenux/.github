@@ -1,18 +1,12 @@
-name: Icenux – Feature request
-description: Suggest an improvement or new support (compositor, distro, option)
+name: Feature request
+description: Suggest an improvement or a new feature
 title: "[FEATURE] "
 labels: ["ToDo"]
 body:
   - type: markdown
     attributes:
       value: |
-        <img src="https://raw.githubusercontent.com/Icenux/.github/main/assets/logo.png" width="64" align="left" alt="Icenux">
-
-        ## Icenux
-
         Tell us what would make the project better.
-
-        <br clear="left">
   - type: textarea
     id: problem
     attributes:
@@ -35,9 +29,9 @@ body:
       label: Type
       options:
         - New feature
-        - Support for another compositor / DE
-        - Support for another distribution
-        - Packaging (APT / RPM)
+        - Improvement of existing behavior
+        - Compatibility / platform support
+        - Packaging / distribution
         - Documentation
   - type: checkboxes
     id: contribute
